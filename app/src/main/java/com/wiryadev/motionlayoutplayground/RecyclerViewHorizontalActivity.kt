@@ -2,7 +2,6 @@ package com.wiryadev.motionlayoutplayground
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.wiryadev.motionlayoutplayground.databinding.ActivityRecyclerViewHorizontalBinding
@@ -44,12 +43,12 @@ class RecyclerViewHorizontalActivity : AppCompatActivity() {
             )
             adapter = posterAdapter
             setHasFixedSize(true)
-            setOnTouchListener { v, event ->
-                Log.d("OnTouchListener", "event: $event")
-                binding.motionLayoutHorizontal.onTouchEvent(event)
-//                v.performClick()
-                return@setOnTouchListener false
-            }
+//            setOnTouchListener { v, event ->
+//                Log.d("OnTouchListener", "event: $event")
+//                binding.motionLayoutHorizontal.onTouchEvent(event)
+////                v.performClick()
+//                return@setOnTouchListener false
+//            }
         }
     }
 }

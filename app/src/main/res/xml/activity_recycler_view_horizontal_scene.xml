@@ -8,8 +8,9 @@
         app:duration="1000">
         <KeyFrameSet></KeyFrameSet>
         <OnSwipe
-            app:dragDirection="dragEnd"
-            app:touchRegionId="@id/rvPoster"
+            app:dragDirection="dragStart"
+            app:touchAnchorId="@id/rvPoster"
+            app:touchAnchorSide="start"
             app:onTouchUp="stop"/>
     </Transition>
 
